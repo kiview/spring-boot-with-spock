@@ -37,6 +37,8 @@ dependencies {
 
 	testCompile 'org.springframework.boot:spring-boot-starter-test'
     testCompile 'org.spockframework:spock-spring:1.0-groovy-2.4'
+	testCompile 'cglib:cglib-nodep:3.2.2' // for stubbing of classes
+
 }
 
 task wrapper(type: Wrapper) {
