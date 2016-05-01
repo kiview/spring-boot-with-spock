@@ -1,4 +1,4 @@
-package com.groovycoder;
+package com.groovycoder.spockboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

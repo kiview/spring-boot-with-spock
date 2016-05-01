@@ -12,7 +12,7 @@ buildscript {
 	}
 }
 
-apply plugin: 'java'
+apply plugin: 'groovy'
 apply plugin: 'spring-boot'
 
 jar {
@@ -30,10 +30,13 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('org.springframework.boot:spring-boot-starter-web')
-	runtime('com.h2database:h2')
-	testCompile('org.springframework.boot:spring-boot-starter-test') 
+	compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+	compile 'org.springframework.boot:spring-boot-starter-web'
+
+	runtime 'com.h2database:h2'
+
+	testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'org.spockframework:spock-spring:1.0-groovy-2.4'
 }
 
 task wrapper(type: Wrapper) {
