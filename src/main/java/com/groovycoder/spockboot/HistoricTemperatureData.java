@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import java.sql.Timestamp;
 
 /**
- * TODO: add documentation
+ * JPA entity representing temperature data.
  */
 @Entity
 public class HistoricTemperatureData {
