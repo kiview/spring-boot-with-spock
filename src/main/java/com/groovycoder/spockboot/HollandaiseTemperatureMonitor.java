@@ -1,5 +1,6 @@
 package com.groovycoder.spockboot;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,11 +17,12 @@ public class HollandaiseTemperatureMonitor {
 
     private final Thermometer thermometer;
 
+    @Autowired
     public HollandaiseTemperatureMonitor(Thermometer thermometer) {
         this.thermometer = thermometer;
     }
 
-    boolean isTemperatureOk() {
+    public boolean isTemperatureOk() {
         int temperature = thermometer.currentTemperature();
 
         boolean belowMinimumThreshold = temperature < HOLLANDAISE_MIN_TEMPERATURE_THRESHOLD;

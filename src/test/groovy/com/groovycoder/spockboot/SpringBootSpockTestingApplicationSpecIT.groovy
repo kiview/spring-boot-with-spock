@@ -9,7 +9,7 @@ import spock.lang.Specification
 /**
  * General integration and smoke tests for {@link SpringBootSpockTestingApplication}.
  */
-@ContextConfiguration(classes = SpringBootSpockTestingApplication) // not mentioned by docs, but had to include this for Spock to startup the Spring context
+@ContextConfiguration // not mentioned by docs, but had to include this for Spock to startup the Spring context
 @SpringBootTest
 class SpringBootSpockTestingApplicationSpecIT extends Specification {
 
